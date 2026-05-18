@@ -7,7 +7,7 @@ It was supposed to be a 5 min setup.
 
 So, I threw the original project out and built this one entirely from scratch just for myself.
  
-Bit of a nightmare for someone who has touched more grass than C#.
+Bit of a nightmare for someone who has touched more grass than WinForms and C#.
 
 I won regardless.
 
