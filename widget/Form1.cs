@@ -8,7 +8,7 @@ namespace widget
 {
     public partial class Form1 : Form
     {
-        // ---- THE "OWNER" WIN32 APIs ----
+        // WIN32 APIs
         [DllImport("user32.dll", SetLastError = true)]
         private static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
@@ -89,14 +89,15 @@ namespace widget
             string rawTime = DateTime.Now.ToString("HH : mm : ss");
             label2.Text = TranslateNumbersToAakriti(rawTime);
 
-            // 2. Process Day
+            // Process Day
             string rawDay = DateTime.Now.ToString("dddd");
             string finalDay = TranslateDayToAakriti(rawDay);
 
-            // 3. Process Date
+            // Process Date
             string rawDate = DateTime.Now.ToString("dd . MM");
             string finalDate = TranslateNumbersToAakriti(rawDate);
 
+            // Join
             label1.Text = finalDay + "\u00A0\u00A0\u00A0\u00A0\u00A0" + finalDate;
 
             label1.Left = (this.ClientSize.Width - label1.Width) / 2;
